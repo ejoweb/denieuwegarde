@@ -1,0 +1,59 @@
+/**
+Theme Name: De Nieuwe Garde
+Theme URI: https://github.com/ejoweb/denieuwegarde/
+Author: Erik Joling
+Author URI: https://www.ejoweb.nl/
+Description: WordPress blokkenthema voor De Nieuwe Garde Nieuwleusen
+Requires at least: 6.2
+Tested up to: 6.2
+Requires PHP: 8
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dng
+*/
+
+/**
+ * INDEX
+ *
+ * - GENERAL
+ * - APPEARANCE
+ * - LAYOUT
+ * - BLOCKS
+ * - SPECIALS
+ */
+
+/* -------------------------------- GENERAL -------------------------------- */
+
+/*
+ * Smooth scroll when `to top`-link is clicked
+ */
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* -------------------------------- LAYOUT -------------------------------- */
+
+
+/* ------------------------------ APPEARANCE ------------------------------ */
+
+
+/* -------------------------------- SPECIALS -------------------------------- */
+
+
+/* --------------------------------- MOBILE --------------------------------- */
+
+
+@media screen and (max-width: 480px) {
+		
+}
+
+/* -------------------------------- TEMPLATES -------------------------------- */
+
+
+

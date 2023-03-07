@@ -1,0 +1,44 @@
+,
+				{
+					"fontFamily": "Ubuntu, sans-serif",
+					"name": "Ubuntu",
+					"slug": "ubuntu",
+					"fontFace": [
+						{
+							"fontFamily": "Ubuntu",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ubuntu/Ubuntu-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ubuntu/Ubuntu-RegularItalic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/ubuntu/Ubuntu-Bold.ttf"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf"
+							]
+						}
+					]					
+				}
