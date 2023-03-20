@@ -39,18 +39,55 @@ html {
 
 /* -------------------------------- LAYOUT -------------------------------- */
 
+.wp-site-blocks > * + * {
+	margin-block-start: 0;
+}
 
 /* ------------------------------ APPEARANCE ------------------------------ */
 
+/* Overwrite default core behaviour */
+.has-global-padding :where(.has-global-padding) {
+  padding-right: var(--wp--style--root--padding-right);
+  padding-left: var(--wp--style--root--padding-left);
+}
 
-/* -------------------------------- SPECIALS -------------------------------- */
+.has-global-padding :where(.has-global-padding) > .alignfull {
+  margin-right: calc(var(--wp--style--root--padding-right) * -1);
+  margin-left: calc(var(--wp--style--root--padding-left) * -1);
+}
 
+/* Set defaults for relevant blocks with background */
+:where(.wp-block-group.has-background),
+:where(.wp-block-column.has-background) {
+	/* border-radius: var(--wp--custom--border-radius--medium); */
+	padding: var(--wp--preset--spacing--40);
+}
+
+/* Force three-columned gallery to always have 3 columns */
+.wp-block-gallery.has-nested-images.columns-3 figure.wp-block-image:not(#individual-image) {
+	width:calc(33% - var(--wp--style--unstable-gallery-gap, 16px)/3);
+	height: clamp(200px, 20vw, 360px);
+}
+
+
+/* ----------------------------- CUSTOM CLASSES ----------------------------- */
+
+
+/* Overlap to top */
+.overlap-top {
+	margin-top: calc( var(--wp--preset--spacing--60) * -1 ) !important;
+	position: relative;
+}
 
 /* --------------------------------- MOBILE --------------------------------- */
 
 
 @media screen and (max-width: 480px) {
 		
+	/* Top-bar informatie? */
+
+
+	/* Logo corrections */
 }
 
 /* -------------------------------- TEMPLATES -------------------------------- */
