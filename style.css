@@ -45,6 +45,17 @@ html {
 
 /* ------------------------------ APPEARANCE ------------------------------ */
 
+.wp-site-blocks > .wp-block-cover {
+	padding: 0;
+}
+
+.wp-site-blocks > .wp-block-cover > .wp-block-cover__inner-container {
+	max-width: var(--wp--custom--layout--full-size);
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 180px rgba(0,0,0,0.25);
+}
+
 /* Overwrite default core behaviour */
 .has-global-padding :where(.has-global-padding) {
   padding-right: var(--wp--style--root--padding-right);
@@ -80,6 +91,14 @@ html {
 }
 
 /* --------------------------------- MOBILE --------------------------------- */
+
+@media screen and (max-width: 960px) {
+		
+	.wp-site-blocks > .wp-block-cover {
+		padding: 0;
+	}
+
+}
 
 
 @media screen and (max-width: 480px) {
