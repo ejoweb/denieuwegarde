@@ -10,7 +10,7 @@
 			"link": true,
 			"palette": [
 				{ "name": "Base", 	    "slug": "base", 	  "color": "#ECE2BC" },
-				{ "name": "Second Base","slug": "second-base","color": "#24473438" },
+				{ "name": "Second Base","slug": "second-base","color": "#4734242E" },
 				{ "name": "Contrast", 	"slug": "contrast",   "color": "#244734" },
 				{ "name": "Primary", 	"slug": "primary",	  "color": "#A92F20" }
 			],
@@ -123,7 +123,7 @@
 				"medium": "10px"
 			},
 			"layout": {
-				"fullSize": "72rem"
+				"fullSize": "68rem"
 			}
 		}
 	},
@@ -261,7 +261,18 @@
 			},
 			"core/column": {
 				"border": {
-					"radius": 0
+					"radius": "var(--wp--custom--border-radius--medium)"
+				}
+			},
+			"core/separator": {
+				"color": {
+					"background": "var(--wp--preset--color--second-base)"
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--80)",
+						"top": "var(--wp--preset--spacing--80)"
+					}
 				}
 			}
 		}

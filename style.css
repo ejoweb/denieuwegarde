@@ -13,17 +13,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dng
 */
 
-/**
- * INDEX
- *
- * - GENERAL
- * - APPEARANCE
- * - LAYOUT
- * - BLOCKS
- * - SPECIALS
- */
 
-/* -------------------------------- GENERAL -------------------------------- */
+/* ------------------------------- DEFAULTS -------------------------------- */
+
 
 /*
  * Smooth scroll when `to top`-link is clicked
@@ -37,13 +29,9 @@ html {
     }
 }
 
-/* -------------------------------- LAYOUT -------------------------------- */
 
-.wp-site-blocks > * + * {
-	margin-block-start: 0;
-}
+/* -------------------------------- GENERAL -------------------------------- */
 
-/* ------------------------------ APPEARANCE ------------------------------ */
 
 .wp-site-blocks > .wp-block-cover {
 	padding: 0;
@@ -51,9 +39,13 @@ html {
 
 .wp-site-blocks > .wp-block-cover > .wp-block-cover__inner-container {
 	max-width: var(--wp--custom--layout--full-size);
+	padding: var(--wp--preset--spacing--50);
+	margin-top: var(--wp--preset--spacing--40);
+	margin-bottom: var(--wp--preset--spacing--40);
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 0px 180px rgba(0,0,0,0.25);
+	background-color: var(--wp--preset--color--base);
 }
 
 /* Overwrite default core behaviour */
@@ -67,17 +59,10 @@ html {
   margin-left: calc(var(--wp--style--root--padding-left) * -1);
 }
 
-/* Set defaults for relevant blocks with background */
-:where(.wp-block-group.has-background),
-:where(.wp-block-column.has-background) {
-	/* border-radius: var(--wp--custom--border-radius--medium); */
-	padding: var(--wp--preset--spacing--40);
-}
-
 /* Force three-columned gallery to always have 3 columns */
 .wp-block-gallery.has-nested-images.columns-3 figure.wp-block-image:not(#individual-image) {
 	width:calc(33% - var(--wp--style--unstable-gallery-gap, 16px)/3);
-	height: clamp(200px, 20vw, 360px);
+	height: clamp(200px, 20vw, 270px);
 }
 
 
@@ -90,26 +75,25 @@ html {
 	position: relative;
 }
 
-/* --------------------------------- MOBILE --------------------------------- */
+/* ------------------------------ BREAKPOINTS ------------------------------- */
 
-@media screen and (max-width: 960px) {
+/* Reset boxed design */
+@media screen and (max-width: 1440px) {
 		
 	.wp-site-blocks > .wp-block-cover {
 		padding: 0;
 	}
 
+	.wp-site-blocks > .wp-block-cover > .wp-block-cover__inner-container {
+		padding: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
 }
 
-
+/* Breakpoint for tiny screens */
 @media screen and (max-width: 480px) {
 		
-	/* Top-bar informatie? */
 
-
-	/* Logo corrections */
 }
-
-/* -------------------------------- TEMPLATES -------------------------------- */
-
-
-
