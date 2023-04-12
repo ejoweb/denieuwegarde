@@ -267,12 +267,6 @@
 			"core/separator": {
 				"color": {
 					"background": "var(--wp--preset--color--second-base)"
-				},
-				"spacing": {
-					"margin": {
-						"bottom": "var(--wp--preset--spacing--80)",
-						"top": "var(--wp--preset--spacing--80)"
-					}
 				}
 			}
 		}
