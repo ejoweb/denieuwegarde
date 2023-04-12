@@ -1,5 +1,8 @@
 # De Nieuwe Garde WordPress theme
-WordPress blocktheme tailormade for Grand Café De Nieuwe Garde in de Spil Nieuwleusen. By Erik @ Ejoweb <https://www.ejoweb.nl>
+WordPress blocktheme tailormade for Grand Café De Nieuwe Garde in de Spil Nieuwleusen. 
 
-## Changelog
-See git commitlog: https://github.com/ejoweb/denieuwegarde
+Code and design by Erik @ [Ejoweb](https://ejoweb.nl) in the Netherlands (<info@ejoweb.nl>).
+
+## Development
+
+For documented code changes see [CHANGELOG.md](./CHANGELOG.md) and [git commitlog](https://github.com/ejoweb/denieuwegarde/commits/main).
