@@ -10,6 +10,7 @@
 			"link": true,
 			"palette": [
 				{ "name": "Base", 	    "slug": "base", 	  "color": "#ECE2BC" },
+				{ "name": "Base Light", "slug": "base-light", "color": "#F0EDE3" },
 				{ "name": "Second Base","slug": "second-base","color": "#4734242E" },
 				{ "name": "Contrast", 	"slug": "contrast",   "color": "#244734" },
 				{ "name": "Primary", 	"slug": "primary",	  "color": "#A92F20" }
@@ -129,7 +130,7 @@
 	},
 	"styles": {
 		"color": {
-			"background": "var(--wp--preset--color--base)",
+			"background": "var(--wp--preset--color--base-light)",
 			"text": 	  "var(--wp--preset--color--contrast)"
 		},
 		"typography": {
@@ -261,7 +262,7 @@
 			},
 			"core/column": {
 				"border": {
-					"radius": "var(--wp--custom--border-radius--medium)"
+					
 				}
 			},
 			"core/separator": {
